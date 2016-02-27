@@ -11,10 +11,10 @@ lapply(.lib, require, character.only=TRUE)
 
 #source("trafficPred.R")
 
-MyUser='admin_airvlc'
-MyPass = '41rvlc2016'
-MyHost= 'mysql.dsic.upv.es'
-MyDataBase='airvlc'
+#MyUser=
+#MyPass = 
+#MyHost= 
+#MyDataBase=
 
 
 

@@ -1,4 +1,25 @@
+###############################################
+################# LIBRARIES ###################
+###############################################
 
+options( java.parameters = "-Xmx6g" )
+.lib<- c("RWeka", "sampling", "caret","gbm", "rpart","dplyr","ggplot2","lubridate","e1071","randomForest","foreach","RMySQL")
+
+.inst <- .lib %in% installed.packages()
+if (length(.lib[!.inst])>0) install.packages(.lib[!.inst])
+lapply(.lib, require, character.only=TRUE)
+
+#source("trafficPred.R")
+
+#MyUser=
+#MyPass = 
+#MyHost= 
+#MyDataBase=
+
+
+###############################################
+############### DATA + MODEL  #################
+###############################################
 
 load("popTotStations.RData")#totStationsHours
 poptotstations<-tbl_df(poptotstations)
@@ -17,7 +38,9 @@ for(h in 1:24){
 save(Fits, file="modelsGridHours.RData")
 
 
-
+###############################################
+################  PREDICTION  #################
+###############################################
 
 load("modelsGridHours.RData")
 popGrid<-tbl_df(read.csv("poblacion_grid.csv"))
@@ -64,8 +87,7 @@ newDS <- data.frame(Grid=results$grid,
                     Bikes = results$pred)
 
 
-
-mydb = dbConnect(MySQL(), user=MyUser, password=MyPass, host=MyHost, dbname=MyDataBase)
-dbWriteTable(mydb, value = newDS, name = "predGrid",  overwrite=TRUE ) 
+#mydb = dbConnect(MySQL(), user=MyUser, password=MyPass, host=MyHost, dbname=MyDataBase)
+#dbWriteTable(mydb, value = newDS, name = "predGrid",  overwrite=TRUE ) 
 #tabla<-fetch(dbSendQuery(mydb, "select * from pred"),n=4900)
 #fetch(dbSendQuery(mydb, "select COUNT(*) from pred"),n=1)
