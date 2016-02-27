@@ -7,7 +7,7 @@ V.1. Scripts in R:
   
 * BikesPred.R: Linear Regression models trained with historical data (2015) for predicting the use of an specific station (number of available bikes) the following 24 hours.
 * GridPred.R: Linear Regression models traindes with both population and the use of bikes in order to predict the possible use of new station in new locations.
-* BestTour.R: Simulated Annealing process to find the best tour (local maxima) between stations. We aim at finding possible new bike routes between actual stations:
+* BestTour.R: Simulated Annealing process to find the best tour (local maxima) between stations. We aim at finding possible new bike routes between actual stations.
 
 ## Appendix 
 
