@@ -3,7 +3,7 @@ bikeXplorer webApp for analysis and prediction of bike-sharing systems.
 
 
 ## Code 
-V.1. Script in R code for analysis and prediction:
+V.1. Scripts in R:
   
 * BikesPred.R: Linear Regression models trained with historical data (2015) for predicting the use of an specific station (number of available bikes) the following 24 hours.
 * GridPred.R: Linear Regression models traindes with both population and the use of bikes in order to predict the possible use of new station in new locations.
