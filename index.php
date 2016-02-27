@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
-    <meta  content="text/html; ISO-8859-1"  http-equiv="content-type">
+    <meta  content="text/html;ISO-8859-1"  http-equiv="content-type">
     <title></title>
     <meta  name="viewport"  content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet"  href="css/leaflet.css">
