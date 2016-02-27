@@ -1,4 +1,5 @@
-# bikeXplorer #
+![bikeXplorer](http://users.dsic.upv.es/~flip/bikeXplorer/imagenes/bikeXplorer.png)
+
 bikeXplorer webApp for analysis and prediction of bike-sharing systems.
 
 
@@ -8,6 +9,11 @@ V.1. Scripts in R:
 * BikesPred.R: Linear Regression models trained with historical data (2015) for predicting the use of an specific station (number of available bikes) the following 24 hours.
 * GridPred.R: Linear Regression models traindes with both population and the use of bikes in order to predict the possible use of new station in new locations.
 * BestTour.R: Simulated Annealing process to find the best tour (local maxima) between stations. We aim at finding possible new bike routes between actual stations.
+* DataWrangling.R: Extraction, transformation, cleaning and modeling functions to generate the data used in the previous scripts.
+
+## Web
+
+* index.php: WebApp main php code. 
 
 ## Appendix 
 
