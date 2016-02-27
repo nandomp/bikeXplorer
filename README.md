@@ -1,3 +1,5 @@
+![bikeXplorer](http://users.dsic.upv.es/~flip/bikeXplorer/imagenes/bikeXplorer.png)
+
 # bikeXplorer #
 bikeXplorer webApp for analysis and prediction of bike-sharing systems.
 
